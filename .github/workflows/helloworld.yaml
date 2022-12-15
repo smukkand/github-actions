@@ -1,5 +1,5 @@
 name: worklfow test1
-off:
+on:
   push:
     branches:
       - main
