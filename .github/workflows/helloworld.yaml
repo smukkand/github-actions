@@ -24,4 +24,9 @@ jobs:
         run: echo "Good Bye"
         shell: bash
         
+<<<<<<< HEAD
 #another sentence 
+=======
+      
+#t4sting file
+>>>>>>> d2ef3ce (new sentence added)
