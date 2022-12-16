@@ -28,10 +28,7 @@ jobs:
     steps:
       - name: Create a comment with API
         run: |
-          gh api -X POST http://api.github.com/repos/${ORGANIZATION}/${REPOSITORY}/issues/${ISSUE_NUMBER}/comments \
-          -f body='
-          Comment from API call not an action
-          '
+          gh api -X POST https://api.github.com/repos/${ORGANIZATION}/${REPOSITORY}/issues/${ISSUE_NUMBER}/comments -f body='Comment from API call not an action'
           
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
